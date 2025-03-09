@@ -52,9 +52,25 @@
 
 }
 
-.navbar__container{
- height: 120px;
- margin: 0;
- padding-bottom: 0 !important;
+.navbar__container {
+  min-height: 120px; // Permite expandirse sin problemas
+  margin: 0;
+  padding-bottom: 0 !important;
 }
+
+
+.navbar-collapse {
+  @include media-breakpoint-down(xl){
+    height: auto; // Permitir altura dinámica
+    position: relative; // Cambia de absolute a relative
+    top: auto;
+    left: auto;
+    width: 100%;
+    background-color: white;
+    z-index: 1050;
+  }
+}
+
+
+
 

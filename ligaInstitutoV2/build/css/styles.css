@@ -11909,9 +11909,21 @@ textarea.form-control-lg {
 }
 
 .navbar__container {
-  height: 120px;
+  min-height: 120px;
   margin: 0;
   padding-bottom: 0 !important;
+}
+
+@media (max-width: 1199.98px) {
+  .navbar-collapse {
+    height: auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    background-color: white;
+    z-index: 1050;
+  }
 }
 
 .custom-img {
